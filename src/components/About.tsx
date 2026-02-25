@@ -26,7 +26,7 @@ const values = [
 
 const About = () => {
   return (
-    <section id="about" className="relative py-24 overflow-hidden">
+    <section id="about" className="relative md:py-24 py-10 overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(59,130,246,0.05),transparent_50%),radial-gradient(circle_at_70%_50%,rgba(147,51,234,0.05),transparent_50%)]" />
       
@@ -35,7 +35,8 @@ const About = () => {
           <div className="inline-block px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-sm">
             <span className="text-sm text-primary font-medium uppercase tracking-wider">• Sobre Nós •</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold">
+          <h2 className="text-4xl md:text-5xl font-bold titulo
+          ">
             <span className="text-foreground">Excelência em </span>
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               Desenvolvimento

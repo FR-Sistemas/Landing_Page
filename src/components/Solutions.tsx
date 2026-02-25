@@ -12,7 +12,7 @@ const features = [
 
 const Solutions = () => {
   return (
-    <section id="solutions" className="relative py-24 overflow-hidden">
+    <section id="solutions" className="relative md:py-24 py-10 overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content Side */}
@@ -21,7 +21,7 @@ const Solutions = () => {
               <div className="inline-block px-4 py-1.5 rounded-full bg-secondary/10 border border-secondary/20 backdrop-blur-sm">
                 <span className="text-sm text-secondary font-medium uppercase tracking-wider">• Soluções •</span>
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold leading-tight">
+              <h2 className="text-4xl md:text-5xl font-bold leading-tight titulo">
                 <span className="text-foreground">Tecnologia que</span>
                 <br />
                 <span className="bg-gradient-to-r from-secondary via-primary to-secondary bg-clip-text text-transparent">

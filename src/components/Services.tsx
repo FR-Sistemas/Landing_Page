@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Code2, Smartphone, Cloud, Database, Cpu, Globe } from "lucide-react";
+import { Code2, Smartphone, Cloud, Database, Cpu, Bot } from "lucide-react";
 
 const services = [
   {
@@ -33,16 +33,16 @@ const services = [
     color: "from-primary/80 to-secondary/80"
   },
   {
-    icon: Globe,
-    title: "Consultoria Tech",
-    description: "Estratégias tecnológicas personalizadas para otimizar sua transformação digital.",
+    icon: Bot,
+    title: "Automações",
+    description: "Automatize rotinas e integrações para ganhar eficiência e reduzir custos operacionais.",
     color: "from-secondary/80 to-primary/80"
   }
 ];
 
 const Services = () => {
   return (
-    <section id="services" className="relative py-24 overflow-hidden">
+    <section id="services" className="relative py-12 md:py-24 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute top-0 left-1/2 w-96 h-96 bg-primary/10 rounded-full blur-[100px]" />
       <div className="absolute bottom-0 right-1/2 w-96 h-96 bg-secondary/10 rounded-full blur-[100px]" />
@@ -52,7 +52,7 @@ const Services = () => {
           <div className="inline-block px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-sm">
             <span className="text-sm text-primary font-medium uppercase tracking-wider">• Serviços •</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold">
+          <h2 className="text-4xl md:text-5xl font-bold titulo">
             <span className="text-foreground">Soluções que </span>
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               Transformam
