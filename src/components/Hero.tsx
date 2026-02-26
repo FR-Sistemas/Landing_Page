@@ -45,7 +45,7 @@ const AnimatedLetters = ({
         <span
           key={`letter-${tokenIndex}-${index}`}
           className={letterClasses}
-          style={{ 
+          style={{
             animationDelay: `${delaySeconds}s`,
             animationDuration: `${duration}s`
           }}
@@ -99,12 +99,12 @@ const Hero = ({ animateCounts = true }: HeroProps) => {
                   <AnimatedLetters text="Desenvolvimento de Software" />
                 </p>
                 <h1 className="mb-6 text-4xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl titulo">
-                  <AnimatedLetters text={headlinePrefix} delay={3.2}/>
+                  <AnimatedLetters text={headlinePrefix} delay={3.2} />
                   <AnimatedLetters
                     text={headlineHighlight}
                     letterClassName="text-primary text-glow"
                     delay={3.9}
-                    duration={3} 
+                    duration={3}
                   />
                 </h1>
                 <p className="mb-10 lg:max-w-lg text-lg leading-relaxed text-muted-foreground">
@@ -112,7 +112,7 @@ const Hero = ({ animateCounts = true }: HeroProps) => {
                 </p>
                 <div className="flex lg:flex-wrap gap-4 ">
                   <a
-                    href="#servicos"
+                    href="#services"
                     className="max-h-[58px] sm:h-full group inline-flex items-center gap-2 rounded-lg bg-primary px-8 py-3.5 font-semibold text-primary-foreground transition-all hover:scale-105 box-glow-strong"
                   >
                     Ver Serviços

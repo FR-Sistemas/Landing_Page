@@ -1,94 +1,54 @@
-import { Button } from "@/components/ui/button";
-import { CheckCircle2, ArrowRight } from "lucide-react";
-
-const features = [
-  "Arquitetura escalável e performática",
-  "Segurança de ponta a ponta",
-  "Interface intuitiva e moderna",
-  "Suporte técnico especializado 24/7",
-  "Integração com sistemas existentes",
-  "Documentação completa e treinamento"
+const projects = [
+  {
+    title: "Kom",
+    image: "/img/kombi.png"
+  },
+  {
+    title: "Cal",
+    image: "/img/calcados.png"
+  }
 ];
 
 const Solutions = () => {
   return (
     <section id="solutions" className="relative md:py-24 py-10 overflow-hidden">
+      {/* Background Effects */}
+      <div className="absolute top-10 left-1/3 w-80 h-80 bg-primary/10 rounded-full blur-[110px]" />
+      <div className="absolute bottom-10 right-1/3 w-96 h-96 bg-secondary/10 rounded-full blur-[110px]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(59,130,246,0.08),transparent_45%),radial-gradient(circle_at_80%_60%,rgba(147,51,234,0.08),transparent_45%)]" />
+
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Content Side */}
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <div className="inline-block px-4 py-1.5 rounded-full bg-secondary/10 border border-secondary/20 backdrop-blur-sm">
-                <span className="text-sm text-secondary font-medium uppercase tracking-wider">• Soluções •</span>
-              </div>
-              <h2 className="text-4xl md:text-5xl font-bold leading-tight titulo">
-                <span className="text-foreground">Tecnologia que</span>
-                <br />
-                <span className="bg-gradient-to-r from-secondary via-primary to-secondary bg-clip-text text-transparent">
-                  Eleva Resultados
-                </span>
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Desenvolvemos soluções personalizadas que atendem perfeitamente às necessidades específicas 
-                do seu negócio, garantindo eficiência, segurança e inovação.
-              </p>
-            </div>
+        <div className="text-center space-y-4 mb-14 relative z-10">
+          <div className="inline-block px-4 py-1.5 rounded-full bg-secondary/10 border border-secondary/20 backdrop-blur-sm">
+            <span className="text-sm text-secondary font-medium uppercase tracking-wider">• Projetos •</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold leading-tight titulo">
+            <span className="text-foreground">Soluções que </span>
+            <span className="bg-gradient-to-r from-secondary via-primary to-secondary bg-clip-text text-transparent">
+              Ganham Vida
+            </span>
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Confira alguns projetos recentes desenvolvidos pela FR Sistemas com foco em resultado,
+            experiência e consistência visual.
+          </p>
+        </div>
 
-            {/* Features List */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {features.map((feature, index) => (
-                <div key={index} className="flex items-start gap-3 group">
-                  <div className="relative mt-0.5">
-                    <CheckCircle2 className="w-5 h-5 text-primary group-hover:text-secondary transition-colors" />
-                    <div className="absolute inset-0 blur-md bg-primary/30 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  </div>
-                  <span className="text-foreground/90 group-hover:text-foreground transition-colors">
-                    {feature}
-                  </span>
-                </div>
-              ))}
-            </div>
-
-            {/* CTA */}
-            <Button 
-              size="lg" 
-              className="group bg-gradient-to-r from-secondary to-primary hover:from-primary hover:to-secondary text-primary-foreground shadow-lg shadow-secondary/30"
+        <div className="md:flex max-w-5xl mx-auto md:gap-10 lg:gap-0">
+          {projects.map((project) => (
+            <div
+              key={project.title}
+              className="mb-8 md:mb-0 group relative mx-auto lg:h-[460px] w-full max-w-[460px] overflow-hidden rounded-3xl bg-black/20 shadow-2xl shadow-black/30 transition-all duration-300 hover:-translate-y-1"
             >
-              <span className="flex items-center gap-2">
-                Conhecer Soluções
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </span>
-            </Button>
-          </div>
-
-          {/* Image Side */}
-          <div className="relative">
-            {/* Glow Effects */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full blur-[80px]" />
-            
-            {/* Main Image Container */}
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl blur-xl" />
-              <div className="relative bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm rounded-2xl border border-primary/20 p-8 overflow-hidden">
-                {/* Placeholder for tech illustration */}
-                <div className="aspect-square bg-gradient-to-br from-primary/10 to-secondary/10 rounded-xl flex items-center justify-center">
-                  <img 
-                    src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80" 
-                    alt="Digital Technology"
-                    className="w-full h-full object-cover rounded-xl opacity-80"
-                  />
-                </div>
-                
-                {/* Floating Elements */}
-                <div className="absolute top-4 right-4 bg-primary/20 backdrop-blur-md rounded-lg px-4 py-2 border border-primary/30">
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                    <span className="text-sm text-primary font-medium">Sistema Online</span>
-                  </div>
-                </div>
+              <div className="relative h-full w-full bg-black/30">
+                <img
+                  src={project.image}
+                  alt={`Projeto ${project.title}`}
+                  className="h-full w-full object-contain object-top transition-transform duration-500 group-hover:scale-[1.01]"
+                />
               </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
